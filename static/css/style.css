@@ -34,6 +34,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 400px;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
 }
 .logo {
   font-family: 'Montserrat-ExtraBold', sans-serif;
@@ -62,6 +66,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
 }
 .contact-info-phone {
   display: flex;
