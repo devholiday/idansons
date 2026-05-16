@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: 'Montserrat-Regular', sans-serif;
+  background-color: #F8F7F1;
+  color: #222;
+  font-size: 16px;
+}
+
+.container {
+  height: 100vh;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo {
+  font-family: 'Montserrat-ExtraBold', sans-serif;
+  color: #23374F;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+  align-items: center;
+}
+.text .text-ru {
+  width: max-content;
+}
+.text .text-he {
+  width: max-content;
+  direction: rtl;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact-info-phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+}
+
+.button {
+  font-size: 13px;
+  font-weight: 500;
+  height: 35px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  color: #ffffff;
+  padding: 0 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  transition: color .3s ease, background-color .3s ease, box-shadow .3s ease;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  font-family: inherit;
+  overflow: hidden;
+}
+.button.fullWidth {
+  width: 100%;
+}
+
+.button.default {
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  color: #122820; 
+}
+.button.default:hover {
+  background-color: #f5f5f5;
+}
+.button.default:active {
+  background-color: #EFF1F0; 
+}
+.button.default:disabled {
+  background-color: #FAFBFA;
+  border-color: #DADFDD;
+  color: #9FA4A2; 
+}
+
+.button.whatsapp {
+  border: none;
+  outline: none;
+  background-color: #25d366;
+  color: #FFFFFF;
+  transition: background-color 0.15s ease;
+}
+.button.whatsapp:hover {
+  background-color: #20BA5A;
+}
+.button.whatsapp:active {
+  background-color: #1CA650;
+}
+.button.whatsapp {
+  display: flex;
+}
+.button.whatsapp img {
+  height: 21px;
+}
