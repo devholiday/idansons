@@ -47,6 +47,7 @@ body {
   flex-direction: column;
   margin-bottom: 35px;
   align-items: center;
+  gap: 3px;
 }
 .text .text-ru {
   width: max-content;
